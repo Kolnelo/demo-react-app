@@ -2,10 +2,11 @@ import React from 'react';
 import CartProductList from '../cart-product-list';
 import CartSummary from '../cart-summary';
 import CartActions from '../cart-actions';
+import './styles.scss';
 
 const CartOrderDisplay = ({cartProducts = [], onRemoveCartProduct = f => f, onSubtractCartProduct = f => f, onAddCartProduct = f => f, onOrder = f => f, history}) => (
     <div className={'cart-order-display'}>
-        <h1>Корзина</h1>
+        <h1 className={'cart-order-display__title'}>Корзина</h1>
         <CartProductList {...{
                               cartProducts,
                               onRemoveCartProduct,
