@@ -1,0 +1,13 @@
+@import "../../../stylesheets/constants";
+
+.money{
+  font-family: $STANDARD-FONT;
+}
+
+.money__value{
+  font-weight: 600;
+}
+
+.money__currency{
+  font-size: 60%;
+}

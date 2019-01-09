@@ -1,0 +1,9 @@
+@import "../../../stylesheets/constants";
+
+.navigation-item{
+  display: inline-block;
+  font-weight: 600;
+  font-size: ($NAVIGATION-FONT-SIZE)+rem;
+  color: #0275d8;
+  text-decoration: none;
+}

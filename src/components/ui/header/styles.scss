@@ -1,0 +1,34 @@
+@import "../../../stylesheets/constants";
+
+.header{
+  display: table;
+  width: 100%;
+}
+
+.header__row{
+  display: table-row;
+}
+
+.header__item{
+  display: table-cell;
+}
+
+.header__item-logo{
+  width: 20%;
+}
+
+.header__item-name{
+  vertical-align: middle;
+  font-size: 3rem;
+  color: #61dafb;
+}
+
+.header__item-profile{
+  padding-right: $INDENT-FROM-EDGE;
+  vertical-align: top;
+  text-align: right;
+}
+
+.header__item-profile .btn:first-child{
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,11 @@
+@import "../../../stylesheets/constants";
+
+.product-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding-top: 20px;
+}
+
+
+

@@ -1,0 +1,12 @@
+@import "../../../stylesheets/constants";
+
+.cart-product-list{
+  padding: $INDENT-FROM-EDGE;
+}
+
+.cart-product-list__message{
+  text-align: center;
+  font-size: 1.5rem;
+  height: 300px;
+  line-height: 300px;
+}

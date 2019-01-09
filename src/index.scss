@@ -1,0 +1,134 @@
+@import "./stylesheets/constants";
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: $REM;
+}
+
+body {
+  margin: 0px;
+  line-height: $STANDARD-LINE-HEIGHT;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color: #373a3c;
+}
+
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+a:focus, a:hover {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn{
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  text-decoration: none;
+}
+
+.btn-outline-primary{
+  color: #0275d8;
+  background-image: none;
+  background-color: transparent;
+  border-color: #0275d8;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-outline-primary:hover:active {
+  color: #fff;
+  background-color: #014682;
+  border-color: #01315a;
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+  background-image: none;
+}
+
+.btn-primary:hover:active {
+  color: #fff;
+  background-color: #014682;
+  border-color: #01315a;
+}
+
+$secondary-color: #373a3c;
+.btn-secondary{
+  color: $secondary-color;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  color: $secondary-color;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  background-image: none;
+  text-decoration: none;
+}
+
+.btn-secondary:active:hover {
+  color: $secondary-color;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.btn-danger{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #c12e2a;
+}
+
+.btn-danger:hover:active {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #8b211e;
+}

@@ -1,0 +1,28 @@
+@import "../../../stylesheets/constants";
+
+.cart-panel{
+  display: table;
+}
+
+.cart-panel__row{
+  display: table-row;
+}
+
+.cart-panel__score-cell{
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding-right: 20px;
+  font-size: ($REM * 2.25 + 2)/2.5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.cart-panel__button-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cart-panel__products-count{
+  color: #FF6900;
+  font-weight: 600;
+}

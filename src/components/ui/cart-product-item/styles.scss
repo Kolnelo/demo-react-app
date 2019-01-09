@@ -1,0 +1,33 @@
+.cart-product-item {
+  vertical-align: middle;
+  padding: 5px;
+  >div{
+    display: inline-block;
+  }
+}
+
+.cart-product-item__name {
+  width: 40%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cart-product-item__quantity {
+  width: 30%;
+}
+
+.quantity-value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.cart-product-item__price {
+  width: 20%;
+  font-size: 1.2rem;
+}
+
+.cart-product-item__remove{
+  width: 10%;
+  text-align: right;
+}

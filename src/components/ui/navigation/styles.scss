@@ -1,0 +1,21 @@
+@import "../../../stylesheets/constants";
+
+.navigation{
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: $INDENT-FROM-EDGE;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+  background-color: white;
+  z-index: 1000;
+}
+
+.navigation__cart-panel{
+  position: absolute;
+  $navigation-height: (1 + $INDENT-FROM-EDGE) * 2 + $NAVIGATION-FONT-SIZE * $REM * $STANDARD-LINE-HEIGHT;
+  $button-height: $REM * 2.25 + 2;
+  top: ($navigation-height - $button-height)/2;
+  right: $INDENT-FROM-EDGE;
+}

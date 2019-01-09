@@ -1,0 +1,6 @@
+@import "./stylesheets/constants";
+
+.App {
+  width: $PAGE-WIDTH;
+  margin: $INDENT-FROM-EDGE auto 0px;
+}

@@ -1,0 +1,1 @@
+export const PIZZA_IMAGES_PATH = '/img/pizza';
