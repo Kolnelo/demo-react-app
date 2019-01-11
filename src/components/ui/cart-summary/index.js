@@ -1,6 +1,7 @@
 import React from 'react';
 import SpanMoney from '../span-money';
 import './styles.scss';
+import PropTypes from "prop-types";
 
 const CartSummary = ({sum = 0}) => (
     <div className={'cart-summary'}>
@@ -10,5 +11,9 @@ const CartSummary = ({sum = 0}) => (
         </div>
     </div>
 );
+
+CartSummary.propTypes = {
+    sum: PropTypes.number
+};
 
 export default CartSummary;

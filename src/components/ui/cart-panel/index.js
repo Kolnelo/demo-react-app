@@ -2,8 +2,9 @@ import React from 'react';
 import SpanMoney from '../span-money';
 import './styles.scss';
 import {Link} from 'react-router-dom';
+import PropTypes from "prop-types";
 
-const CartPanel = ({ cartProducts = []}) => {
+const CartPanel = ({ cartProducts}) => {
     const totalPrice = cartProducts.reduce(
         (sum, currentP) => sum + currentP.price * currentP.quantity,
         0
@@ -29,5 +30,9 @@ const CartPanel = ({ cartProducts = []}) => {
         </div>
     );
 }
+
+CartPanel.propTypes = {
+    cartProducts: PropTypes.array.isRequired
+};
 
 export default CartPanel;

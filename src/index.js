@@ -12,7 +12,7 @@ const store = storeFactory(
     window.initialState
 );
 
-//Необходимо для эмуляции работы с базой данных
+//Необходимо для эмуляции работы с сервером
 store.subscribe(() => {
     localStorage['redux-store'] = JSON.stringify(store.getState())
 });

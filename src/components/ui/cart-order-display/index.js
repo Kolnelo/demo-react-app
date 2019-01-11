@@ -3,6 +3,7 @@ import CartProductList from '../cart-product-list';
 import CartSummary from '../cart-summary';
 import CartActions from '../cart-actions';
 import './styles.scss';
+import PropTypes from "prop-types";
 
 const CartOrderDisplay = ({cartProducts = [], onRemoveCartProduct = f => f, onSubtractCartProduct = f => f, onAddCartProduct = f => f, onOrder = f => f, history}) => (
     <div className={'cart-order-display'}>
@@ -24,5 +25,14 @@ const CartOrderDisplay = ({cartProducts = [], onRemoveCartProduct = f => f, onSu
         />
     </div>
 );
+
+CartOrderDisplay.propTypes = {
+    cartProducts: PropTypes.array.isRequired,
+    onRemoveCartProduct: PropTypes.func,
+    onSubtractCartProduct: PropTypes.func,
+    onAddCartProduct: PropTypes.func,
+    onOrder: PropTypes.func,
+    history: PropTypes.object
+};
 
 export default CartOrderDisplay;

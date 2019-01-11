@@ -1,6 +1,7 @@
 import React from 'react';
 import CartProductItem from '../cart-product-item';
 import './styles.scss';
+import PropTypes from "prop-types";
 
 const CartProductList = ({cartProducts = [], onRemoveCartProduct = f => f, onSubtractCartProduct = f => f, onAddCartProduct = f => f}) => (
     <div className={'cart-product-list'}>
@@ -20,5 +21,12 @@ const CartProductList = ({cartProducts = [], onRemoveCartProduct = f => f, onSub
         }
     </div>
 );
+
+CartProductList.propTypes = {
+    cartProducts: PropTypes.array.isRequired,
+    onRemoveCartProduct: PropTypes.func,
+    onSubtractCartProduct: PropTypes.func,
+    onAddCartProduct: PropTypes.func
+};
 
 export default CartProductList;

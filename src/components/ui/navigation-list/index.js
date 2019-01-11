@@ -1,6 +1,7 @@
 import React from 'react';
 import NavigationItem from '../navigation-item';
 import './styles.scss';
+import PropTypes from "prop-types";
 
 const NavigationList = ({navigations = []}) => (
     <ul className={'navigation-list'}>
@@ -11,5 +12,9 @@ const NavigationList = ({navigations = []}) => (
         )}
     </ul>
 );
+
+NavigationList.propTypes = {
+    navigations: PropTypes.array
+};
 
 export default NavigationList;

@@ -12,7 +12,7 @@ const ProductList = ({products = [], cartProducts = [], onCartProduct = f => f, 
             ...p,
         quantity: getQuantityByCartProduct(cartProducts.find( cp => cp.id === p.id ))
         })
-    )
+    );
 
     return (
         <div className={'product-list'}>
@@ -34,6 +34,8 @@ const ProductList = ({products = [], cartProducts = [], onCartProduct = f => f, 
 
 ProductList.propTypes = {
     products: PropTypes.array,
+    cartProducts: PropTypes.array,
+    onCartProduct: PropTypes.func,
     onAddProduct: PropTypes.func,
     onSubtractProduct: PropTypes.func
 };

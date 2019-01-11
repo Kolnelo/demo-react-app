@@ -3,14 +3,9 @@ import NavigationList from '../navigation-list';
 //import CartPanel from '../cart-panel';
 import {NavigationCart} from '../../containers';
 import './styles.scss';
+import PropTypes from "prop-types";
 
-const Navigation = ({navigations = [{name:'Главная', to:'/'},
-                                    {name:'Товары', to:'/'},
-                                    {name:'Акции', to:'/'},
-                                    {name:'Контакты', to:'/'},
-                                    {name: 'Франшиза', to:'/'},
-                                    {name: 'О нас', to:'/'}
-                                   ]}) => (
+const Navigation = ({navigations = []}) => (
     <nav className={'navigation'}>
         <NavigationList navigations={navigations}/>
         <div className={'navigation__cart-panel'}>
@@ -18,5 +13,10 @@ const Navigation = ({navigations = [{name:'Главная', to:'/'},
         </div>
     </nav>
 );
+
+Navigation.propTypes = {
+    navigations: PropTypes.array
+};
+
 
 export default Navigation;
